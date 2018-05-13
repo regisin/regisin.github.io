@@ -6,26 +6,26 @@ logo: # filename of a logo image that has been placed into your images directory
 
 # Enter the following platform usernames if you would like for them to appear on your site.
 owner:
-  name: Your Name
+  name: Paulo Alexandre Regis
   avatar: bio-photo.jpg
-  bio: "A brief description of yourself."
-  email: #emailaddress
+  bio: "A Ph.D. candidate at the University of Nevada - Reno"
+  email: pregis@nevada.unr.edu
   # Do not include the @ symbol in your Twitter username
-  twitter: #username
+  twitter: paregis
   linkedin: #username
-  github: #username
+  github: regisin
   orcid: # ID Number (ex. 0000-0000-0000-0000)
-  researchgate: #username
+  researchgate: Paulo_Regis
   mendeley: #username
   google:
     plus: #username
     analytics:
     verify:
-    scholar: #id
+    scholar: IKSrj8wAAAAJ
   facebook: #username
   instagram: #username
   bing-verify:
-  stackoverflow: #123456/username from a "https://stackoverflow.com/users/123456/username" link
+  stackoverflow: 2962392/regisin
   xing: #username
   lastfm: #username
   tumblr: #username
