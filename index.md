@@ -3,12 +3,14 @@ layout: page
 excerpt: "About Me..."
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Biography:
+I am a Ph.D. candidate at the Computer Science and Engineering department at the [University of Nevada, Reno](http://www.unr.edu/). I am a member if the [NetLab](http://cse.unr.edu/) since 2014 when joining the doctoral program, working under the supervision of [Dr. Shamik Sengupta](https://www.cse.unr.edu/~shamik/). Previously, I obtained my Bachelor's degree in Telecommunications Engineering from [Regional University of Blumenau, Brazil](http://furb.br) in 2010.
 
-## Current Interests and Projects:
+## Research interests:
+- Longevity of Mobile Ad-hoc Networks
+- 3D Mobility Models
+- Communication in 3D mesh network
+- Survivability against Jamming Attacks
 
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- DLorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
+## Services:
+- Technical Program Committee Member of ICIT `2016`
