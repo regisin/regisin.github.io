@@ -24,11 +24,11 @@ excerpt: "Publications"
 ### Conference proceedings
 1. **PA Regis**, S Sengupta, "Distributed split-path routing strategy for multi-hop mesh networks", IEEE Military Communications Conference (MILCOM) 2017, Baltimore, MD. [{{pdfsign}}](manuscripts/milcom_17.pdf) [{{pptsign}}](manuscripts/milcom_17.pptx)
 
-1. **PA Regis**, S Bhunia and S Sengupta, "Enhancing Performance and Longevity of Multi-radio Multi-channel HetNets through Dynamic Path-assignment", IEEE International Conference on Computing, Networking and Communications (ICNC) 2017, Silicon Valley, USA. [{{pdfsign}}](manuscripts/icnc17_path.pdf) [{{pptsign}}](manuscripts/icnc17_path.pptx)
+1. **PA Regis**, S Bhunia and S Sengupta, "Enhancing Performance and Longevity of Multi-radio Multi-channel HetNets through Dynamic Path-assignment", IEEE International Conference on Computing, Networking and Communications (ICNC) 2017, Silicon Valley, USA. [{{pdfsign}}](manuscripts/icnc_17.pdf) [{{pptsign}}](manuscripts/icnc_17.pptx)
 
 1. **PA Regis**, S Bhunia and S Sengupta, "Implementation of 3D Obstacle Compliant Mobility Models for UAV networks in ns-3", proc. of The Workshop on ns-3 (WNS3), 2016, Seattle, Washington.  [{{pdfsign}}](manuscripts/wns3_16.pdf)  [{{pptsign}}](manuscripts/wns3_16.pptx)
 
-1. S Bhunia, V Behzadan, **PA Regis** and S Sengupta, "Performance of Adaptive Beam Nulling in Multihop Ad-Hoc networks under Jamming", IEEE International Symposium on Cyberspace Safety and Security (CSS 2015), New York.  [{{pdfsign}}](manuscripts/css15.pdf) [{{pptsign}}](manuscripts/css15.pptx)
+1. S Bhunia, V Behzadan, **PA Regis** and S Sengupta, "Performance of Adaptive Beam Nulling in Multihop Ad-Hoc networks under Jamming", IEEE International Symposium on Cyberspace Safety and Security (CSS 2015), New York.  [{{pdfsign}}](manuscripts/css_15.pdf) [{{pptsign}}](manuscripts/css_15.pptx)
 
 
 ### Peer Review Activities

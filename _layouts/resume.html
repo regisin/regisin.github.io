@@ -24,6 +24,10 @@
   <article class="page">
     <h1>{{ page.title }}</h1>
 
+
+    {% if page.pdf %}
+    <a href="{{ site.github.url }}{{ page.pdf }}">Downkoad complete version</a>
+    {% endif %}
    <div class="resume">
       {{ content }}
 </div><!--closing resume div-->
