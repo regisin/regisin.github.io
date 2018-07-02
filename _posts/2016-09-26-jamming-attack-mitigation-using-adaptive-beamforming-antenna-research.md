@@ -26,13 +26,12 @@ In multihop ad hoc networks, a jammer can drastically disrupt the flow of inform
 
 ### Publications
 
-1. S Bhunia, **PA Regis** and S Sengupta, "Distributed Adaptive Beam Nulling to Survive Against Jamming in 3D UAV Mesh Networks", To appear in Elsevier Computer Networks 2018.   [{{pdfsign}}](/publications/manuscripts/comnet2018.pdf)
+1. S Bhunia, **PA Regis** and S Sengupta, "Distributed Adaptive Beam Nulling to Survive Against Jamming in 3D UAV Mesh Networks", Elsevier Computer Networks, Volume 137, 2018, Pages 83-97. [DOI:10.1016/j.comnet.2018.03.011](https://doi.org/10.1016/j.comnet.2018.03.011) [{{pdfsign}}](manuscripts/comnet_18.pdf)
 
-1. S Bhunia and S Sengupta, "Distributed Adaptive Beam Nulling to Mitigate Jamming in 3D UAV Mesh Networks", to appear in International Conference on Computing, Networking and Communications (ICNC) 2017, Silicon Valley, USA, [{{pdfsign}}](/publications/manuscripts/icnc17_beamnull.pdf)
+1. S Bhunia and S Sengupta, "Distributed Adaptive Beam Nulling to Mitigate Jamming in 3D UAV Mesh Networks", to appear in International Conference on Computing, Networking and Communications (ICNC) 2017, Silicon Valley, USA, [{{pdfsign}}](http://sbhunia.me/publications/manuscripts/icnc17_beamnull.pdf)
 
-1. S Bhunia, V Behzadan, **PA Regis** and S Sengupta, "Adaptive Beam Nulling in Multihop Ad Hoc Networks Against a Jammer in Motion", Elsevier Computer Networks 2016. [DOI:10.1016/j.comnet.2016.06.030](http://www.sciencedirect.com/science/article/pii/S1389128616302109).   [{{pdfsign}}](/publications/manuscripts/comnet_16.pdf)
+1. S Bhunia, V Behzadan, **PA Regis** and S Sengupta, "Adaptive Beam Nulling in Multihop Ad Hoc Networks Against a Jammer in Motion", Elsevier Computer Networks, Volume 109, Part 1, 9 November 2016, Pages 50-66. [DOI:10.1016/j.comnet.2016.06.030](http://www.sciencedirect.com/science/article/pii/S1389128616302109). [{{pdfsign}}](manuscripts/comnet_16.pdf)
 
-
-1. S Bhunia, V Behzadan, **PA Regis** and S Sengupta, "Performance of Adaptive Beam Nulling in Multihop Ad-Hoc networks under Jamming", IEEE International Symposium on Cyberspace Safety and Security (CSS 2015), New York.  [{{pdfsign}}](/publications/manuscripts/css15.pdf) [{{pptsign}}](/publications/manuscripts/css15.pptx)
+1. S Bhunia, V Behzadan, **PA Regis** and S Sengupta, "Performance of Adaptive Beam Nulling in Multihop Ad-Hoc networks under Jamming", IEEE International Symposium on Cyberspace Safety and Security (CSS 2015), New York. [{{pdfsign}}](manuscripts/css_15.pdf) [{{pptsign}}](manuscripts/css_15.pptx)
 
 ### Useful Links

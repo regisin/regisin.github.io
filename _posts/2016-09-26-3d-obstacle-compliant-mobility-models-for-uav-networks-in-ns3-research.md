@@ -50,7 +50,7 @@ There are currently three mobility models with the adaptations implemented:
 
 
 ### Publications
-1. **PA Regis**, S Bhunia and S Sengupta, "Implementation of 3D Obstacle Compliant Mobility Models for UAV networks in ns-3", proc. of The Workshop on ns-3 (WNS3), 2016, Seattle, Washington.  [{{pdfsign}}](/manuscripts/wns3_16.pdf)  [{{pptsign}}](/manuscripts/wns3_16.pptx)
+1. **PA Regis**, S Bhunia and S Sengupta, "Implementation of 3D Obstacle Compliant Mobility Models for UAV networks in ns-3", Workshop on ns-3 (WNS3), 2016, Seattle, Washington.  [{{pdfsign}}](/manuscripts/wns3_16.pdf)  [{{pptsign}}](/manuscripts/wns3_16.pptx)
 
 
 ### Useful Links 
