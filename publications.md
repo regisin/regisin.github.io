@@ -19,8 +19,10 @@ excerpt: "Publications"
 
 1. S Bhunia, V Behzadan, **PA Regis** and S Sengupta, "Adaptive Beam Nulling in Multihop Ad Hoc Networks Against a Jammer in Motion", Elsevier Computer Networks, Volume 109, Part 1, 9 November 2016, Pages 50-66. [DOI:10.1016/j.comnet.2016.06.030](http://www.sciencedirect.com/science/article/pii/S1389128616302109). [{{pdfsign}}](manuscripts/comnet_16.pdf)
 
-  
+ 
 ### Conference proceedings
+1. **PA Regis**, AN Patra, "Unmanned Aerial Vehicles Positioning Scheme for First-responders in a Dynamic Area of Interest", To appear in IEEE Vehicular Technology Conference (VTC) Fall 2018, Chicago, IL. [{{pdfsign}}](manuscripts/vtc_18.pdf) [{{pptsign}}](#)
+
 1. **PA Regis**, S Sengupta, "Distributed split-path routing strategy for multi-hop mesh networks", IEEE Military Communications Conference (MILCOM) 2017, Baltimore, MD. [{{pdfsign}}](manuscripts/milcom_17.pdf) [{{pptsign}}](manuscripts/milcom_17.pptx)
 
 1. **PA Regis**, S Bhunia and S Sengupta, "Enhancing Performance and Longevity of Multi-radio Multi-channel HetNets through Dynamic Path-assignment", IEEE International Conference on Computing, Networking and Communications (ICNC) 2017, Silicon Valley, USA. [{{pdfsign}}](manuscripts/icnc_17.pdf) [{{pptsign}}](manuscripts/icnc_17.pptx)
