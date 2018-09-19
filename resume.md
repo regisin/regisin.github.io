@@ -1,6 +1,6 @@
 ---
 layout: resume
-pdf: pdf/PARegis_CV.pdf
+pdf: resume/pdf/PARegis_CV.pdf
 ---
 ## Currently
 

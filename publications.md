@@ -21,7 +21,7 @@ excerpt: "Publications"
 
  
 ### Conference proceedings
-1. **PA Regis**, AN Patra, "Unmanned Aerial Vehicles Positioning Scheme for First-responders in a Dynamic Area of Interest", To appear in IEEE Vehicular Technology Conference (VTC) Fall 2018, Chicago, IL. [{{pdfsign}}](manuscripts/vtc_18.pdf) [{{pptsign}}](#)
+1. **PA Regis**, AN Patra, "Unmanned Aerial Vehicles Positioning Scheme for First-responders in a Dynamic Area of Interest", IEEE Vehicular Technology Conference (VTC) Fall 2018, Chicago, IL. [{{pdfsign}}](manuscripts/vtc_18fall.pdf) [{{pptsign}}](manuscripts/vtc_18fall.pptx)
 
 1. **PA Regis**, S Sengupta, "Distributed split-path routing strategy for multi-hop mesh networks", IEEE Military Communications Conference (MILCOM) 2017, Baltimore, MD. [{{pdfsign}}](manuscripts/milcom_17.pdf) [{{pptsign}}](manuscripts/milcom_17.pptx)
 
