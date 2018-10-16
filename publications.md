@@ -21,7 +21,7 @@ excerpt: "Publications"
 
  
 ### Conference proceedings
-1. T Brodeur, **PA Regis**, D Feil-Seifer, S Sengupta, "Search and Rescue Operations with Mesh Networked Robots", To appear in IEEE Ubiquitous Computing, Electronics and Mobile Communication Conference (UEMCON) 2018, New York City, NY. [{{pdfsign}}](#) [{{pptsign}}](#)
+1. T Brodeur, **PA Regis**, D Feil-Seifer, S Sengupta, "Search and Rescue Operations with Mesh Networked Robots", To appear in IEEE Ubiquitous Computing, Electronics and Mobile Communication Conference (UEMCON) 2018, New York City, NY. [{{pdfsign}}](manuscripts/uemcon_18.pdf) [{{pptsign}}](#)
 
 1. **PA Regis**, AN Patra, "Unmanned Aerial Vehicles Positioning Scheme for First-responders in a Dynamic Area of Interest", IEEE Vehicular Technology Conference (VTC) Fall 2018, Chicago, IL. [{{pdfsign}}](manuscripts/vtc_18fall.pdf) [{{pptsign}}](manuscripts/vtc_18fall.pptx)
 
