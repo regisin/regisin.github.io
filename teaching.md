@@ -3,8 +3,8 @@ layout: page
 title: "Teaching"
 ---
 
-<!-- ## Courses:
-- Computer Communication Networks (CPE 400/600) `Spring 2018` -->
+## Courses:
+- Computer Communication Networks (CPE 400/600) `Spring 2019`
 
 ## Teaching Assistant:
 - Introduction to Engineering Design (ENGR 100) `Fall 2017`, `Fall 2018`
