@@ -13,6 +13,8 @@ excerpt: "Publications"
 
 
 ### Journal papers 
+1. AN Patra, **PA Regis** and S Sengupta, "Distributed Allocation and Dynamic Reassignment of Channels in UAV Networks for Wireless Coverage", To appear in Elsevier Pervasive and Mobile Computing. [{{pdfsign}}](manuscripts/pmc_19.pdf)
+
 1. S Bhunia, **PA Regis** and S Sengupta, "Distributed Adaptive Beam Nulling to Survive Against Jamming in 3D UAV Mesh Networks", Elsevier Computer Networks, Volume 137, 2018, Pages 83-97. [DOI:10.1016/j.comnet.2018.03.011](https://doi.org/10.1016/j.comnet.2018.03.011) [{{pdfsign}}](manuscripts/comnet_18.pdf)
 
 1. **PA Regis**, C Miley and S Sengupta, "Multi-hop Mobile Wireless Mesh Network Testbed Development and Measurements", International Journal of Innovative Research in Computer and Communication Engineering, Volume 5, 2017, Pages 83-97. [{{pdfsign}}](manuscripts/rroij_17.pdf)
