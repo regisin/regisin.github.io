@@ -13,9 +13,9 @@ excerpt: "Publications"
 
 
 ### Journal papers 
-1. AN Patra, **PA Regis** and S Sengupta, "Dynamic Self-Reconfiguration of Unmanned Aerial Vehicles to Serve Overloaded Hotspot Cells", To appear in Elsevier Computers and Electrical Engineering. [{{pdfsign}}](manuscripts/caee_19.pdf)
+1. AN Patra, **PA Regis** and S Sengupta, "Dynamic Self-Reconfiguration of Unmanned Aerial Vehicles to Serve Overloaded Hotspot Cells", To appear in Elsevier Computers and Electrical Engineering. [DOI:10.1016/j.compeleceng.2019.02.014](https://doi.org/10.1016/j.compeleceng.2019.02.014) [{{pdfsign}}](manuscripts/caee_19.pdf)
 
-1. AN Patra, **PA Regis** and S Sengupta, "Distributed Allocation and Dynamic Reassignment of Channels in UAV Networks for Wireless Coverage", To appear in Elsevier Pervasive and Mobile Computing. [{{pdfsign}}](manuscripts/pmc_19.pdf)
+1. AN Patra, **PA Regis** and S Sengupta, "Distributed Allocation and Dynamic Reassignment of Channels in UAV Networks for Wireless Coverage", To appear in Elsevier Pervasive and Mobile Computing. [DOI:10.1016/j.pmcj.2019.02.005](https://doi.org/10.1016/j.pmcj.2019.02.005) [{{pdfsign}}](manuscripts/pmc_19.pdf)
 
 1. S Bhunia, **PA Regis** and S Sengupta, "Distributed Adaptive Beam Nulling to Survive Against Jamming in 3D UAV Mesh Networks", Elsevier Computer Networks, Volume 137, 2018, Pages 83-97. [DOI:10.1016/j.comnet.2018.03.011](https://doi.org/10.1016/j.comnet.2018.03.011) [{{pdfsign}}](manuscripts/comnet_18.pdf)
 
