@@ -1,8 +1,11 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "jekyll", "~> 3.0"
+source "https://rubygems.org"
+gemspec
+
+gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
 gem "jekyll-gist"
-gem "octopress"
+gem "jekyll-paginate"
 gem "github-pages"

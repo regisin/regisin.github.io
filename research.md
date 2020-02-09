@@ -1,5 +1,5 @@
 ---
-layout: research-post-index
+layout: research
 title: Research
-excerpt: "Research Projects"
+permalink: /research/
 ---

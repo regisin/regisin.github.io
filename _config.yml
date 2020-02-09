@@ -1,74 +1,85 @@
-# Site wide configuration
-
 title: pregis.me
-locale: en_US
-logo: # filename of a logo image that has been placed into your images directory
+author: Paulo Alexandre Regis
+email: ""
+description: > # this means to ignore newlines until "show_excerpts:"
+  Paulo's personal website.
 
-# Enter the following platform usernames if you would like for them to appear on your site.
-owner:
-  name: Paulo Alexandre Regis
-  avatar: bio-photo.jpg
-  bio: "A Ph.D. candidate at the University of Nevada - Reno"
-  email: pregis@nevada.unr.edu
-  # Do not include the @ symbol in your Twitter username
-  twitter: paregis
-  linkedin: #username
-  github: regisin
-  orcid: # ID Number (ex. 0000-0000-0000-0000)
-  researchgate: Paulo_Regis
-  mendeley: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    scholar: IKSrj8wAAAAJ
-  facebook: #username
-  instagram: #username
-  bing-verify:
-  stackoverflow: 2962392/regisin
-  xing: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
-  disqus-shortname:
+show_excerpts: false # set to true to show excerpts on the homepage
 
-# The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
-# you may do so in _sass/variables.scss
-highlight-color: '#003366'
-lowlight-color: '#000'
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
 
-  # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
-creative-commons:
-  cc-by: #yes
-  cc-by-nc: #yes
+  # generate social links in footer
+  social_links:
+    twitter: paregis
+    github:  regisin
+    rss: rss
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: regisin
+    linkedin: regisin
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+    googlescholar: IKSrj8wAAAAJ
+    stackoverflow: 2962392/regisin
 
-#DO NOT EDIT BEYOND THIS POINT
-# Jekyll configuration
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+ - teaching.md
+ - research.md
+ - publications.md
+
+# Build settings
+theme: minima
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-gist
+ - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page:num/"
+
+show_excerpts: true
+
+collections:
+ research:
+  output: true
+ publications: 
+  output: false
+
+use_math: true
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
 
 permalink:   /:categories/:title/
-markdown:    kramdown
 highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: compressed
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
+markdown: kramdown
 kramdown:
+  math_engine: katex
+  input: GFM
   auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+  hard_wrap: false
+  syntax_highlighter: rouge
