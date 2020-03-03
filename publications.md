@@ -23,21 +23,23 @@ permalink: /publications/
 1. S Bhunia, V Behzadan, **PA Regis** and S Sengupta, "Adaptive Beam Nulling in Multihop Ad Hoc Networks Against a Jammer in Motion", Elsevier Computer Networks, Volume 109, Part 1, 9 November 2016, Pages 50-66. [DOI:10.1016/j.comnet.2016.06.030](http://www.sciencedirect.com/science/article/pii/S1389128616302109). [{{pdfsign}}]({{site.url}}/uploads/publications/comnet_16.pdf)
 
 ### Conference proceedings
+1. N Ceccarelli, **PA Regis**, D Feil-Seifer, S Sengupta, "Optimal UAV Positioning for a Temporary Network Using an Iterative Genetic Algorithm", To appear in IEEE Wireless and Optical Communications Conference (WOCC) 2020, Newark, NJ. [{{pdfsign}}]({{site.url}}/uploads/publications/wocc_20.pdf) [{{pptsign}}](#)
+
 1. **PA Regis**, AN Patra, S Sengupta, "Low-cost wireless testbed for Internet of Things ad hoc networks prototyping and evaluation", To appear in IEEE World Forum on Internet of Things (WFIoT) 2020, New Orleans, LA. [{{pdfsign}}]({{site.url}}/uploads/publications/wfiot_20.pdf) [{{pptsign}}](#)
 
-2. L Ruetten, **PA Regis**, D Feil-Seifer, S Sengupta, "Area-Optimized UAV Swarm Network for Search and Rescue Operations", IEEE Annual Computing and Communication Workshop and Conference (CCWC) 2020, Las Vegas, NV. [{{pdfsign}}]({{site.url}}/uploads/publications/ccwc_20.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/ccwc_20.pptx)
+1. L Ruetten, **PA Regis**, D Feil-Seifer, S Sengupta, "Area-Optimized UAV Swarm Network for Search and Rescue Operations", IEEE Annual Computing and Communication Workshop and Conference (CCWC) 2020, Las Vegas, NV. [{{pdfsign}}]({{site.url}}/uploads/publications/ccwc_20.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/ccwc_20.pptx)
 
-3. T Brodeur, **PA Regis**, D Feil-Seifer, S Sengupta, "Search and Rescue Operations with Mesh Networked Robots", IEEE Ubiquitous Computing, Electronics and Mobile Communication Conference (UEMCON) 2018, New York City, NY. [{{pdfsign}}]({{site.url}}/uploads/publications/uemcon_18.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/uemcon_18.pptx)
+1. T Brodeur, **PA Regis**, D Feil-Seifer, S Sengupta, "Search and Rescue Operations with Mesh Networked Robots", IEEE Ubiquitous Computing, Electronics and Mobile Communication Conference (UEMCON) 2018, New York City, NY. [{{pdfsign}}]({{site.url}}/uploads/publications/uemcon_18.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/uemcon_18.pptx)
 
-4. **PA Regis**, AN Patra and S Sengupta "Unmanned Aerial Vehicles Positioning Scheme for First-responders in a Dynamic Area of Interest", IEEE Vehicular Technology Conference (VTC) Fall 2018, Chicago, IL. [{{pdfsign}}]({{site.url}}/uploads/publications/vtc_18fall.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/vtc_18fall.pptx)
+1. **PA Regis**, AN Patra and S Sengupta "Unmanned Aerial Vehicles Positioning Scheme for First-responders in a Dynamic Area of Interest", IEEE Vehicular Technology Conference (VTC) Fall 2018, Chicago, IL. [{{pdfsign}}]({{site.url}}/uploads/publications/vtc_18fall.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/vtc_18fall.pptx)
 
-5. **PA Regis**, S Sengupta, "Distributed split-path routing strategy for multi-hop mesh networks", IEEE Military Communications Conference (MILCOM) 2017, Baltimore, MD. [{{pdfsign}}]({{site.url}}/uploads/publications/milcom_17.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/milcom_17.pptx)
+1. **PA Regis**, S Sengupta, "Distributed split-path routing strategy for multi-hop mesh networks", IEEE Military Communications Conference (MILCOM) 2017, Baltimore, MD. [{{pdfsign}}]({{site.url}}/uploads/publications/milcom_17.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/milcom_17.pptx)
 
-6. **PA Regis**, S Bhunia and S Sengupta, "Enhancing Performance and Longevity of Multi-radio Multi-channel HetNets through Dynamic Path-assignment", IEEE International Conference on Computing, Networking and Communications (ICNC) 2017, Silicon Valley, USA. [{{pdfsign}}]({{site.url}}/uploads/publications/icnc_17.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/icnc_17.pptx)
+1. **PA Regis**, S Bhunia and S Sengupta, "Enhancing Performance and Longevity of Multi-radio Multi-channel HetNets through Dynamic Path-assignment", IEEE International Conference on Computing, Networking and Communications (ICNC) 2017, Silicon Valley, USA. [{{pdfsign}}]({{site.url}}/uploads/publications/icnc_17.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/icnc_17.pptx)
 
-7. **PA Regis**, S Bhunia and S Sengupta, "Implementation of 3D Obstacle Compliant Mobility Models for UAV networks in ns-3", proc. of The Workshop on ns-3 (WNS3), 2016, Seattle, Washington. [{{pdfsign}}]({{site.url}}/uploads/publications/wns3_16.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/wns3_16.pptx)
+1.  **PA Regis**, S Bhunia and S Sengupta, "Implementation of 3D Obstacle Compliant Mobility Models for UAV networks in ns-3", proc. of The Workshop on ns-3 (WNS3), 2016, Seattle, Washington. [{{pdfsign}}]({{site.url}}/uploads/publications/wns3_16.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/wns3_16.pptx)
 
-8. S Bhunia, V Behzadan, **PA Regis** and S Sengupta, "Performance of Adaptive Beam Nulling in Multihop Ad-Hoc networks under Jamming", IEEE International Symposium on Cyberspace Safety and Security (CSS 2015), New York. [{{pdfsign}}]({{site.url}}/uploads/publications/css_15.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/css_15.pptx)
+1. S Bhunia, V Behzadan, **PA Regis** and S Sengupta, "Performance of Adaptive Beam Nulling in Multihop Ad-Hoc networks under Jamming", IEEE International Symposium on Cyberspace Safety and Security (CSS 2015), New York. [{{pdfsign}}]({{site.url}}/uploads/publications/css_15.pdf) [{{pptsign}}]({{site.url}}/uploads/publications/css_15.pptx)
 
 
 ### Peer Review Activities
