@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+      <h1>{{title}}</h1>
+      <p>{{ about.biography }}</p>
+      <h2>Research interests</h2>
+      <ul>
+          {% for item in about.interests %}
+            <li>{{item}}</li>
+          {% endfor %}
+      </ul>
+{% endblock %}

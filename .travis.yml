@@ -1,0 +1,29 @@
+language: python
+python:
+  - '3.8'
+
+install:
+  - pip install jinja2
+before_script:
+  - openssl aes-256-cbc -K $encrypted_5a7fed476472_key -iv $encrypted_5a7fed476472_iv -in .travisdeploykey.enc -out .travisdeploykey -d
+  - chmod go-rwx .travisdeploykey
+  - eval `ssh-agent -s`
+  - ssh-add .travisdeploykey
+  - git config user.name "Travis-CI"
+  - git config user.email "noreply@travis-ci.org"
+  - COMMIT_MESSAGE="Publishing site on `date "+%Y-%m-%d %H:%M:%S"` from
+    `git log -n 1 --format='commit %h - %s'`"
+
+script:
+  - set -e
+  - python build.py
+  - git checkout -b gh-pages
+  - git add -f _site/
+  - 'git commit -m "${COMMIT_MESSAGE}"'
+  - git filter-branch -f --subdirectory-filter _site/
+  # Obviously, replace with your repo's SSH URL and the appropriate branch
+  - git push -f git@github.com:regisin/regisin.github.io.git gh-pages:gh-pages
+
+branches:
+  only:
+    - master

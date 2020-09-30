@@ -1,0 +1,57 @@
+
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ title }}</h1>
+    <h2>Journal articles</h2>
+    <ol reversed>
+    {% for k,paper in journals.items() %}
+        <li>
+            {% for author in paper.authors %}
+                {{ 'and' if loop.last }} {{ author|author_filter() }},
+            {% endfor %}
+            "{{ paper.title }}." 
+            {% if paper.published %}
+            In 
+            {% else %}
+            To appear in 
+            {% endif %}
+            {{ paper.publisher }} {{ paper.venue_name }}, Volume {{ paper.volume }}, pages {{ paper.page_from }}-{{ paper.page_to }},  {{ paper.month|month_name_filter() }} {{ paper.year }}.
+            {% if paper.pdf %}
+            (<a href="{{ paper.pdf }}">pdf</a>)
+            {% endif %}
+            {% if paper.doi %}
+            (<a href="https://doi.org/{{ paper.doi }}">doi</a>)
+            {% endif %}
+            (<a href="/publications/{{ k }}">details</a>)
+        </li>
+    {% endfor %}
+    </ol>
+
+    <h2>Conferences</h2>
+    <ol reversed>
+    {% for k,paper in conferences.items() %}
+        <li>
+            {% for author in paper.authors %}
+                {{ 'and' if loop.last }} {{ author|author_filter() }},
+            {% endfor %}
+            "{{ paper.title }}." 
+            {% if paper.published %}
+            In 
+            {% else %}
+            To appear in 
+            {% endif %}
+            {{ paper.publisher }} {{ paper.venue_name }} ({{ paper.venue_short_name }}) {{ paper.year }}. {{ paper.location }}.
+            {% if paper.pdf %}
+            (<a href="{{ paper.pdf }}">pdf</a>)
+            {% endif %}
+            {% if paper.ppt %}
+            (<a href="{{ paper.ppt }}">ppt</a>)
+            {% endif %}
+            {% if paper.video %}
+            (<a href="{{ paper.video }}">video</a>)
+            {% endif %}
+            (<a href="/publications/{{ k }}">details</a>)
+        </li>
+    {% endfor %}
+    </ol>
+{% endblock %}

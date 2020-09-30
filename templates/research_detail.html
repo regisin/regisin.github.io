@@ -1,0 +1,54 @@
+
+{% extends 'base.html' %}
+{% block content %}
+      <h1>{{ project.name }}</h1>
+      <p>{{ project.description }}</p>
+
+      <h2>People</h2>
+      <ul>
+      {% for person in project.people %}
+            <li>
+                  {% if 'url' in person %}
+                  <a href ="{{person.url}}">{{ person.name }}</a>
+                  {% else %}
+                  {{ person.name }}
+                  {% endif %}
+                  {% if 'affiliation' in person %}
+                  ({{ person.affiliation }})
+                  {% endif %}
+            </li>
+      {% endfor %}
+      </ul>
+
+      <h2>Resources</h2>
+      {% for res in project.embed %}
+      {{res}}
+      {% endfor %}
+
+      <h2>Publications</h2>
+      <ul>
+      {% for paper in project.publications %}
+            <li>
+            {% for author in paper.authors %}
+            {{ 'and' if loop.last }} {{ author|author_filter() }},
+            {% endfor %}
+            "{{ paper.title }}." 
+            {% if paper.published %}
+            In 
+            {% else %}
+            To appear in 
+            {% endif %}
+            {{ paper.publisher }} {{ paper.venue_name }}, {{ paper.year }}.
+            {% if paper.pdf %}
+            (<a href="{{ paper.pdf }}">pdf</a>)
+            {% endif %}
+            {% if paper.ppt %}
+            (<a href="{{ paper.ppt }}">ppt</a>)
+            {% endif %}
+            {% if paper.doi %}
+            (<a href="https://doi.org/{{ paper.doi }}">doi</a>)
+            {% endif %}
+            {% endfor %}
+            </li>
+      </ul>
+{% endblock %}

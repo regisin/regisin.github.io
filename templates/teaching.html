@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+{% block content %}
+      <h1>{{title}}</h1>
+      {% for university in universities %}
+        <h2>{{ university.name }}</h2>
+        <ul>
+            {% for item in university.courses %}
+              <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+      {% endfor %}
+{% endblock %}

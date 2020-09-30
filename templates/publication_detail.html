@@ -1,0 +1,122 @@
+
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ publication.title }}</h1>
+    {% if publication.pdf %}
+    (<a href="../{{ publication.pdf }}">pdf</a>)
+    {% endif %}
+    {% if publication.ppt %}
+    (<a href="../{{ publication.ppt }}">ppt</a>)
+    {% endif %}
+
+    <h2>Abstract</h2>
+    <p>{{ publication.abstract }}</p>
+
+    <h2>Citation</h2>
+    {% if publication.type == 'conf' %}
+        {% for author in publication.authors %}
+            {{ 'and' if loop.last }} {{ author|author_filter() }},
+        {% endfor %}
+        "{{ publication.title }}." 
+        {% if publication.published %}
+        In 
+        {% else %}
+        To appear in 
+        {% endif %}
+        {{ publication.publisher }} {{ publication.venue_name }} ({{ publication.venue_short_name }}) {{ publication.year }}. {{ publication.location }}.
+        {% if publication.pdf %}
+        (<a href="{{ publication.pdf }}">pdf</a>)
+        {% endif %}
+        {% if publication.ppt %}
+        (<a href="{{ publication.ppt }}">ppt</a>)
+        {% endif %}
+        {% if publication.video %}
+        (<a href="{{ publication.video }}">video</a>)
+        {% endif %}
+    {% elif publication.type == 'jour' %}
+        {% for author in publication.authors %}
+            {{ 'and' if loop.last }} {{ author|author_filter() }},
+        {% endfor %}
+        "{{ publication.title }}." 
+        {% if publication.published %}
+        In 
+        {% else %}
+        To appear in 
+        {% endif %}
+        {{ publication.publisher }} {{ publication.venue_name }}, Volume {{ publication.volume }}, pages {{ publication.page_from }}-{{ publication.page_to }},  {{ publication.month|month_name_filter() }} {{ publication.year }}.
+        {% if publication.pdf %}
+        (<a href="{{ publication.pdf }}">pdf</a>)
+        {% endif %}
+        {% if publication.doi %}
+        (<a href="https://doi.org/{{ publication.doi }}">doi</a>)
+        {% endif %}
+    {% endif %}
+
+    <h2>Author detail</h2>
+    <table>
+        {% for person in publication.authors %}
+        <tr>
+            <td>
+                Name: {{ person.name }}<br>
+                {% if 'title' in person %}
+                {{ person.title }}<br>
+                {% endif %}
+                {% if 'url' in person %}
+                Website: <a href ="{{ person.url }}">{{ person.url }}</a><br>
+                {% endif %}
+                {% if 'affiliation' in person %}
+                Affiliation: {{ person.affiliation }}<br>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>Bibtex</h2>
+    <script type="text/javascript">
+        function copyBibtex() {
+            const copyText = document.getElementById("bibtex").textContent;
+            const textArea = document.createElement('textarea');
+            textArea.textContent = copyText;
+            document.body.append(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            console.log('copied');
+        }
+        document.getElementById('copyBibtexButton').addEventListener('click', copyBibtex);
+    </script>
+    (<a href="#bibtex" id="copyBibtexButton">copy</a>)
+<pre id="bibtex">
+<code>
+{% if publication.type == 'conf' %}
+@inproceedings{{'{'}}{{pub_id}},
+    title={{'{'}}{{ publication.title }}},
+    author={{'{'}}{% for author in publication.authors %}{{ 'and ' if loop.last }}{{ author.name }}{{ ', ' if not loop.last }}{% endfor %}},
+    year={{'{'}}{{ publication.year }}},
+{% if publication.month %}    month={{'{'}}{{ publication.month }}},
+{% endif %}{% if publication.doi %}    doi={{'{'}}{{ publication.doi }}},
+{% endif %}    publisher={{'{'}}{{ publication.publisher }}},
+    address={{'{'}}{{ publication.location }}},
+    booktitle={{'{'}}{{ publication.booktitle }}},
+}
+{% elif publication.type == 'jour' %}
+@article{{'{'}}{{pub_id}},
+    title={{'{'}}{{ publication.title }}},
+    author={{'{'}}{% for author in publication.authors %}{{ 'and ' if loop.last }}{{ author.name }}{{ ', ' if not loop.last }}{% endfor %}},
+    year={{'{'}}{{ publication.year }}},
+{% if publication.month %}    month={{'{'}}{{ publication.month|month_name_filter() }}},
+{% endif %}{% if publication.doi %}    doi={{'{'}}{{ publication.doi }}},
+{% endif %}    journal={{'{'}}{{ publication.publisher }} {{ publication.venue_name }}},
+}
+{% endif %}
+</code>
+</pre>
+    
+
+
+    {% if publication.support %}
+    <h2>Support</h2>
+    TODO
+    {% endif %}
+{% endblock %}
