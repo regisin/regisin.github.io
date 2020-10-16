@@ -3,10 +3,10 @@
 {% block content %}
     <h1>{{ publication.title }}</h1>
     {% if publication.pdf %}
-    (<a href="../{{ publication.pdf }}">pdf</a>)
+    (<a href="{{ general.base_url }}{{ publication.pdf }}"><span class="oi" data-glyph="document"></span></a>)
     {% endif %}
     {% if publication.ppt %}
-    (<a href="../{{ publication.ppt }}">ppt</a>)
+    (<a href="{{ general.base_url }}{{ publication.ppt }}"><span class="oi" data-glyph="monitor"></span></a>)
     {% endif %}
 
     <h2>Abstract</h2>
@@ -25,13 +25,13 @@
         {% endif %}
         {{ publication.publisher }} {{ publication.venue_name }} ({{ publication.venue_short_name }}) {{ publication.year }}. {{ publication.location }}.
         {% if publication.pdf %}
-        (<a href="{{ publication.pdf }}">pdf</a>)
+        (<a href="{{ general.base_url }}{{ publication.pdf }}"><span class="oi" data-glyph="document"></span></a>)
         {% endif %}
         {% if publication.ppt %}
-        (<a href="{{ publication.ppt }}">ppt</a>)
+        (<a href="{{ general.base_url }}{{ publication.ppt }}"><span class="oi" data-glyph="monitor"></span></a>)
         {% endif %}
         {% if publication.video %}
-        (<a href="{{ publication.video }}">video</a>)
+        (<a href="{{ general.base_url }}{{ publication.video }}"><span class="oi" data-glyph="video"></span></a>)
         {% endif %}
     {% elif publication.type == 'jour' %}
         {% for author in publication.authors %}
@@ -45,7 +45,7 @@
         {% endif %}
         {{ publication.publisher }} {{ publication.venue_name }}, Volume {{ publication.volume }}, pages {{ publication.page_from }}-{{ publication.page_to }},  {{ publication.month|month_name_filter() }} {{ publication.year }}.
         {% if publication.pdf %}
-        (<a href="{{ publication.pdf }}">pdf</a>)
+        (<a href="{{ general.base_url }}{{ publication.pdf }}"><span class="oi" data-glyph="document"></span></a>)
         {% endif %}
         {% if publication.doi %}
         (<a href="https://doi.org/{{ publication.doi }}">doi</a>)
@@ -73,20 +73,7 @@
     </table>
 
     <h2>Bibtex</h2>
-    <script type="text/javascript">
-        function copyBibtex() {
-            const copyText = document.getElementById("bibtex").textContent;
-            const textArea = document.createElement('textarea');
-            textArea.textContent = copyText;
-            document.body.append(textArea);
-            textArea.select();
-            document.execCommand("copy");
-            document.body.removeChild(textArea);
-            console.log('copied');
-        }
-        document.getElementById('copyBibtexButton').addEventListener('click', copyBibtex);
-    </script>
-    (<a href="#bibtex" id="copyBibtexButton">copy</a>)
+    (<a href="#bibtex" id="copyBibtexButton" alt="copy"><span class="oi" data-glyph="double-quote-serif-right"></span></a>)
 <pre id="bibtex">
 <code>
 {% if publication.type == 'conf' %}
@@ -112,6 +99,19 @@
 {% endif %}
 </code>
 </pre>
+<script type="text/javascript">
+    function copyBibtex() {
+        const copyText = document.getElementById("bibtex").textContent;
+        const textArea = document.createElement('textarea');
+        textArea.textContent = copyText;
+        document.body.append(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+        console.log('copied');
+    }
+    document.getElementById('copyBibtexButton').addEventListener('click', copyBibtex);
+</script>
     
 
 

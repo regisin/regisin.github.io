@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+      <h1>{{ title }}</h1>
+      {% for k,post in posts.items() %}
+        <h2><a href=/blog/{{ k }}>{{ post.title }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+        (<a href=/blog/{{ k }}>more</a>)
+      {% endfor %}
+{% endblock %}

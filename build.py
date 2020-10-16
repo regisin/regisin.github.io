@@ -1,11 +1,12 @@
-from pathlib import Path
 import shutil
+from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
-from store import gen, about, teaching, research, publications
+from store import gen, about, teaching, research, publications, blog
 
 CURRENT_PATH = Path.cwd()
 BUILD_DIR = '_site'
+STATIC_DIR = 'static'
 
 """After building, run to serve:
 python -m http.server --directory ./_site/
@@ -64,17 +65,11 @@ try:
     shutil.rmtree(CURRENT_PATH / Path(BUILD_DIR))
 except FileNotFoundError:
     print("Build dir does not exist (yet).")
-# create folder structure
+# create folder structure and copy static folder
 path = CURRENT_PATH / Path(BUILD_DIR)
-path.mkdir(parents=True, exist_ok=True)
-file_path = path / Path("files")
-img_path = path / Path("images")
-# copy static files
-src_file_path = CURRENT_PATH / Path('static/files')
-shutil.copytree(src_file_path, file_path)
-src_img_path = CURRENT_PATH / Path('static/images')
-shutil.copytree(src_img_path, img_path)
-
+src_path = CURRENT_PATH / STATIC_DIR
+shutil.copytree(src_path, path)
+# create CNAME file for github pages to work with domain
 cname = path / 'CNAME'
 with open(cname,'w') as fh:
     fh.write(gen['site'])
@@ -148,6 +143,7 @@ template = env.get_template('research_detail.html')
 for r in research['projects']:
     output = template.render(
         general=gen,
+        title='Project details',
         project=r
     )
     o = path / Path("research/"+r['slug'])
@@ -179,6 +175,7 @@ template = env.get_template('publication_detail.html')
 for k,pub in publications['conferences'].items():
     output = template.render(
         general=gen,
+        title='Publication details',
         pub_id=k,
         publication=pub
     )
@@ -190,10 +187,43 @@ for k,pub in publications['conferences'].items():
 for k,pub in publications['journals'].items():
     output = template.render(
         general=gen,
+        title='Publication details',
         pub_id=k,
         publication=pub
     )
     o = path / Path("publications/"+k)
+    o.mkdir(parents=True, exist_ok=True)
+    o = o / Path('index.html')
+    with o.open(mode='w') as fh:
+        fh.write(output)
+
+"""
+Blog
+"""
+# /blog
+template = env.get_template('blog.html')
+output = template.render(
+    general=gen,
+    title='blog?',
+    posts=blog['posts'],
+)
+o = path / Path("blog")
+o.mkdir(parents=True, exist_ok=True)
+o = o / Path('index.html')
+with o.open(mode='w') as fh:
+    fh.write(output)
+
+# /blog/page/* (2-x)
+
+# /blog/*
+template = env.get_template('blog_post.html')
+for k,post in blog['posts'].items():
+    output = template.render(
+        general=gen,
+        title=post['title'],
+        post=post
+    )
+    o = path / Path("blog/"+k)
     o.mkdir(parents=True, exist_ok=True)
     o = o / Path('index.html')
     with o.open(mode='w') as fh:

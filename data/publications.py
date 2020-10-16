@@ -19,7 +19,7 @@ publications = {
         'location': 'Newark, NJ, USA',
         'published': True,
         'doi': None,
-        'pdf': '../files/wocc_20.pdf',
+        'pdf': '/files/wocc_20.pdf',
         'ppt': None,
         'video': None,
     },
@@ -38,9 +38,9 @@ publications = {
         'location': 'New Orleans, LA, USA',
         'published': True,
         'doi': None,
-        'pdf': '../files/wfiot_20.pdf', 
-        'ppt': '../files/wfiot_20.pptx',
-        'video': '../files/wfiot_20.mp4', # or a link to youtube
+        'pdf': '/files/wfiot_20.pdf', 
+        'ppt': '/files/wfiot_20.pptx',
+        'video': '/files/wfiot_20.mp4', # or a link to youtube
     },
     'ruetten2020area-optimized': {
         'type': 'conf',
@@ -58,8 +58,8 @@ publications = {
         'location': 'Las Vegas, NV, USA',
         'published': True,
         'doi': None,
-        'pdf': '../files/ccwc_20.pdf',
-        'ppt': '../files/ccwc_20.pptx',
+        'pdf': '/files/ccwc_20.pdf',
+        'ppt': '/files/ccwc_20.pptx',
         'video': None,
     },
     'brodeur2018search': {
@@ -78,8 +78,8 @@ publications = {
         'location': 'New York, NY, USA',
         'published': True,
         'doi': None,
-        'pdf': '../files/uemcon_18.pdf',
-        'ppt': '../files/uemcon_18.pptx',
+        'pdf': '/files/uemcon_18.pdf',
+        'ppt': '/files/uemcon_18.pptx',
         'video': None,
     },
     'regis2018unmanned': {
@@ -97,8 +97,8 @@ publications = {
         'location': 'Chicago, IL, USA',
         'published': True,
         'doi': None,
-        'pdf': '../files/vtc_18fall.pdf',
-        'ppt': '../files/vtc_18fall.pptx',
+        'pdf': '/files/vtc_18fall.pdf',
+        'ppt': '/files/vtc_18fall.pptx',
         'video': None,
     },
     'regis2017distributed': {
@@ -115,8 +115,8 @@ publications = {
         'location': 'Baltimore, MD, USA',
         'published': True,
         'doi': None,
-        'pdf': '../files/milcom_17.pdf',
-        'ppt': '../files/milcom_17.pptx',
+        'pdf': '/files/milcom_17.pdf',
+        'ppt': '/files/milcom_17.pptx',
         'video': None,
     },
     'regis2017enhancing': {
@@ -134,8 +134,8 @@ publications = {
         'location': 'Silicon Valley, USA',
         'published': True,
         'doi': None,
-        'pdf': '../files/icnc_17.pdf',
-        'ppt': '../files/icnc_17.pptx',
+        'pdf': '/files/icnc_17.pdf',
+        'ppt': '/files/icnc_17.pptx',
         'video': None,
     },
     'regis2016implementation': {
@@ -153,8 +153,8 @@ publications = {
         'location': 'Seattle, WA, USA',
         'published': True,
         'doi': None,
-        'pdf': '../files/wns3_16.pdf',
-        'ppt': '../files/wns3_16.pptx',
+        'pdf': '/files/wns3_16.pdf',
+        'ppt': '/files/wns3_16.pptx',
         'video': None,
     },
     'bhunia2015performance': {
@@ -173,8 +173,8 @@ publications = {
         'location': 'New York, NY, USA',
         'published': True,
         'doi': None,
-        'pdf': '../files/css_15.pdf',
-        'ppt': '../files/css_15.pptx',
+        'pdf': '/files/css_15.pdf',
+        'ppt': '/files/css_15.pptx',
         'video': None,
     },
 # Journals
@@ -194,7 +194,7 @@ publications = {
         'page_to': 89,
         'published': True,
         'doi': '10.1016/j.compeleceng.2019.02.014',
-        'pdf': '../files/caee_19.pdf',
+        'pdf': '/files/caee_19.pdf',
     },
     'patra2019distributed': {
         'type': 'jour',
@@ -212,7 +212,7 @@ publications = {
         'page_to': 70,
         'published': True,
         'doi': '10.1016/j.pmcj.2019.02.005',
-        'pdf': '../files/pmc_19.pdf',
+        'pdf': '/files/pmc_19.pdf',
     },
     'bhunia2018distributed': {
         'type': 'jour',
@@ -230,7 +230,7 @@ publications = {
         'page_to': 97,
         'published': True,
         'doi': '10.1016/j.comnet.2018.03.011',
-        'pdf': '../files/comnet_18.pdf',
+        'pdf': '/files/comnet_18.pdf',
     },
     'regis2017multi-hop': {
         'type': 'jour',
@@ -248,7 +248,7 @@ publications = {
         'page_to': 97,
         'published': True,
         'doi': None,
-        'pdf': '../files/rroij_17.pdf',
+        'pdf': '/files/rroij_17.pdf',
     },
     'bhunia2016adaptive': {
         'type': 'jour',
@@ -267,6 +267,6 @@ publications = {
         'page_to': 66,
         'published': True,
         'doi': '10.1016/j.comnet.2016.06.030',
-        'pdf': '../files/comnet_16.pdf',
+        'pdf': '/files/comnet_16.pdf',
     },
 }

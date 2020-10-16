@@ -17,12 +17,12 @@
             {% endif %}
             {{ paper.publisher }} {{ paper.venue_name }}, Volume {{ paper.volume }}, pages {{ paper.page_from }}-{{ paper.page_to }},  {{ paper.month|month_name_filter() }} {{ paper.year }}.
             {% if paper.pdf %}
-            (<a href="{{ paper.pdf }}">pdf</a>)
+            (<a href="{{ general.base_url }}{{ paper.pdf }}"><span class="oi" data-glyph="document"></span></a>)
             {% endif %}
             {% if paper.doi %}
             (<a href="https://doi.org/{{ paper.doi }}">doi</a>)
             {% endif %}
-            (<a href="/publications/{{ k }}">details</a>)
+            (<a href="{{ general.base_url }}/publications/{{ k }}">...</a>)
         </li>
     {% endfor %}
     </ol>
@@ -42,15 +42,15 @@
             {% endif %}
             {{ paper.publisher }} {{ paper.venue_name }} ({{ paper.venue_short_name }}) {{ paper.year }}. {{ paper.location }}.
             {% if paper.pdf %}
-            (<a href="{{ paper.pdf }}">pdf</a>)
+            (<a href="{{ general.base_url }}{{ paper.pdf }}"><span class="oi" data-glyph="document"></span></a>)
             {% endif %}
             {% if paper.ppt %}
-            (<a href="{{ paper.ppt }}">ppt</a>)
+            (<a href="{{ general.base_url }}{{ paper.ppt }}"><span class="oi" data-glyph="monitor"></span></a>)
             {% endif %}
             {% if paper.video %}
-            (<a href="{{ paper.video }}">video</a>)
+            (<a href="{{ general.base_url }}{{ paper.video }}"><span class="oi" data-glyph="video"></span></a>)
             {% endif %}
-            (<a href="/publications/{{ k }}">details</a>)
+            (<a href="{{ general.base_url }}/publications/{{ k }}">...</a>)
         </li>
     {% endfor %}
     </ol>

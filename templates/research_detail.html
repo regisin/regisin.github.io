@@ -9,7 +9,7 @@
       {% for person in project.people %}
             <li>
                   {% if 'url' in person %}
-                  <a href ="{{person.url}}">{{ person.name }}</a>
+                  <a href ="{{ person.url }}">{{ person.name }}</a>
                   {% else %}
                   {{ person.name }}
                   {% endif %}
@@ -27,7 +27,7 @@
 
       <h2>Publications</h2>
       <ul>
-      {% for paper in project.publications %}
+      {% for k,paper in project.publications.items() %}
             <li>
             {% for author in paper.authors %}
             {{ 'and' if loop.last }} {{ author|author_filter() }},
@@ -40,14 +40,15 @@
             {% endif %}
             {{ paper.publisher }} {{ paper.venue_name }}, {{ paper.year }}.
             {% if paper.pdf %}
-            (<a href="{{ paper.pdf }}">pdf</a>)
+            (<a href="{{ general.base_url }}{{ paper.pdf }}"><span class="oi" data-glyph="document"></span></a>)
             {% endif %}
             {% if paper.ppt %}
-            (<a href="{{ paper.ppt }}">ppt</a>)
+            (<a href="{{ general.base_url }}{{ paper.ppt }}"><span class="oi" data-glyph="monitor"></span></a>)
             {% endif %}
             {% if paper.doi %}
             (<a href="https://doi.org/{{ paper.doi }}">doi</a>)
             {% endif %}
+            (<a href="{{ general.base_url }}/publications/{{ k }}">...</a>)
             {% endfor %}
             </li>
       </ul>
