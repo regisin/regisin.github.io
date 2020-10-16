@@ -2,7 +2,7 @@ import shutil
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
-from store import gen, about, teaching, research, publications, blog
+from store import gen, about, teaching, research, publications
 
 CURRENT_PATH = Path.cwd()
 BUILD_DIR = '_site'

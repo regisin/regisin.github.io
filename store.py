@@ -4,7 +4,7 @@ from data.people import colaborators, me
 from data.publications import publications as pubs
 from data.teaching import teaching as teach
 from data.research import research as res
-from data.blog import blog as blog_
+# from data.blog import blog as blog_
 
 """
 Global variables
@@ -65,4 +65,4 @@ publications['journals'] = {k:v for k,v in pubs.items() if v['type'] == 'jour'}
 """
 Blog posts
 """
-blog = blog_
+# blog = blog_
