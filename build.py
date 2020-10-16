@@ -201,30 +201,30 @@ for k,pub in publications['journals'].items():
 Blog
 """
 # /blog
-template = env.get_template('blog.html')
-output = template.render(
-    general=gen,
-    title='blog?',
-    posts=blog['posts'],
-)
-o = path / Path("blog")
-o.mkdir(parents=True, exist_ok=True)
-o = o / Path('index.html')
-with o.open(mode='w') as fh:
-    fh.write(output)
+# template = env.get_template('blog.html')
+# output = template.render(
+#     general=gen,
+#     title='blog?',
+#     posts=blog['posts'],
+# )
+# o = path / Path("blog")
+# o.mkdir(parents=True, exist_ok=True)
+# o = o / Path('index.html')
+# with o.open(mode='w') as fh:
+#     fh.write(output)
 
-# /blog/page/* (2-x)
+# # /blog/page/* (2-x)
 
-# /blog/*
-template = env.get_template('blog_post.html')
-for k,post in blog['posts'].items():
-    output = template.render(
-        general=gen,
-        title=post['title'],
-        post=post
-    )
-    o = path / Path("blog/"+k)
-    o.mkdir(parents=True, exist_ok=True)
-    o = o / Path('index.html')
-    with o.open(mode='w') as fh:
-        fh.write(output)
+# # /blog/*
+# template = env.get_template('blog_post.html')
+# for k,post in blog['posts'].items():
+#     output = template.render(
+#         general=gen,
+#         title=post['title'],
+#         post=post
+#     )
+#     o = path / Path("blog/"+k)
+#     o.mkdir(parents=True, exist_ok=True)
+#     o = o / Path('index.html')
+#     with o.open(mode='w') as fh:
+#         fh.write(output)
