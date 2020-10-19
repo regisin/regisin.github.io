@@ -1,5 +1,4 @@
 ---
-title: This is a Big TitTtle!?
 excerpt: aloha
 one: 1
 ---

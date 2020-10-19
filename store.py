@@ -36,7 +36,7 @@ About
 """
 about = {}
 about['title'] = 'About'
-about['biography'] = "I’m an Assistant Professor in the Department of Computer Science at Southeastern Louisiana University. I was a member of the Networks Lab (former CNL) since 2014 when joining the doctoral program, working under the supervision of Dr. Shamik Sengupta, until my graduation in 2019. Previously, I obtained my Bachelor’s degree in Telecommunications Engineering from Regional University of Blumenau, Brazil in 2011."
+about['biography'] = "I’m an Assistant Professor in the Department of Computer Science at Southeastern Louisiana University. I was a member of the Networks Lab (former CNL) since 2014 when joining the doctoral program, working under the supervision of Dr. Shamik Sengupta, until my graduation in 2019. Previously, I obtained my Bachelor’s degree in Telecommunications Engineering from Regional University of Blumenau, Brazil in 2011. :)"
 about['interests'] = [
     "Longevity of Mobile Ad-hoc Networks",
     "3D Mobility Models",
