@@ -201,17 +201,17 @@ for k,pub in publications['journals'].items():
 Blog
 """
 # /blog
-template = env.get_template('blog.html')
-output = template.render(
-    general=gen,
-    title='blog?',
-    posts=blog_pages[0],
-)
-o = path / Path("blog")
-o.mkdir(parents=True, exist_ok=True)
-o = o / Path('index.html')
-with o.open(mode='w') as fh:
-    fh.write(output)
+# template = env.get_template('blog.html')
+# output = template.render(
+#     general=gen,
+#     title='blog?',
+#     posts=blog_pages[0],
+# )
+# o = path / Path("blog")
+# o.mkdir(parents=True, exist_ok=True)
+# o = o / Path('index.html')
+# with o.open(mode='w') as fh:
+#     fh.write(output)
 
 
 
