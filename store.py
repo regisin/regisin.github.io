@@ -10,7 +10,7 @@ from data.research import research as res
 Global variables
 """
 gen = {}
-gen['site'] = 'pregis.me'
+gen['site'] = 'regisin.github.io'
 if os.environ.get('BUILD_ENV') == 'production':
     gen['build_env'] = 'production'
     gen['base_url'] = 'https://' + gen['site']
