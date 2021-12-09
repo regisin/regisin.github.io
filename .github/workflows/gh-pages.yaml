@@ -16,7 +16,7 @@ jobs:
           python-version: '3.9'
       - name: Install dependencies
         run: |
-          pip install jinja2 shutil
+          pip install jinja2
       - name: Build
         run: |
           python build.py
