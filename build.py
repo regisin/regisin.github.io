@@ -29,7 +29,7 @@ Home
 template = env.get_template('about.html')
 output = template.render(
     BASE_URL=BASE_URL,
-    title="Home",
+    title="Home ",
 )
 o = BUILD_PATH / Path('index.html')      # http://BASE_URL/
 with o.open(mode='w') as fh:
