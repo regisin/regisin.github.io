@@ -6,7 +6,7 @@ from pathlib import Path
 from data import teaching, research
 
 
-BASE_URL='http://localhost:8000'
+BASE_URL='https://regisin.github.io'
 BUILD_DIR = '_site'
 STATIC_DIR = 'static'                           # Where the static assets are located
 CURRENT_PATH = Path.cwd()
